@@ -10,7 +10,6 @@ import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 public class HomePage extends BasePage {
     public HomePage(WebDriver driver) {
         super(driver);
-        driver.get("https://ilcarro.web.app/search");
         PageFactory.initElements(new AjaxElementLocatorFactory(driver, 20), this);
     }
 
